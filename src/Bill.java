@@ -59,7 +59,6 @@ public class Bill extends JPanel {
 
 		try {
 			JLabel label7 = new JLabel(String.valueOf(result.getDouble("totalUsage")));
-
 			JLabel label8 = new JLabel(String.valueOf(result.getDouble("cost")));
 			JLabel label9 = new JLabel(String.valueOf(result.getDouble("tax")));
 			JLabel label10 = new JLabel(String.valueOf(result.getDouble("remaining")));
@@ -78,6 +77,7 @@ public class Bill extends JPanel {
 			subSumaryPanel2.add(label11);
 			subSumaryPanel2.add(label6);
 			subSumaryPanel2.add(label12);
+		
 		} catch (Exception E) {
 			E.printStackTrace();
 		}
